@@ -3,26 +3,28 @@ package com.hccs.samples.sample.gps.node.employee.details;
 import org.springframework.stereotype.Component;
 
 import com.hccs.samples.sample.gps.core.TransformerBase;
+import com.hccs.samples.sample.gps.models.beans.EmployeeBean;
 import com.hccs.samples.sample.gps.models.beans.StudentBean;
 import com.hccs.samples.sample.gps.node.employee.list.Adapter;
 
 @Component
-public class AdapterToObjectTransformer extends TransformerBase<Adapter, StudentBean> {
+public class AdapterToObjectTransformer extends TransformerBase<Adapter, EmployeeBean> {
 
 	@Override
-	public StudentBean transform(Adapter obj) {
+	public EmployeeBean transform(Adapter obj) {
 		// TODO Auto-generated method stub
 	System.out.println("ObjectToAdapterTransformer, transform method");
-	StudentBean studentBean = new StudentBean(obj.firstNameProperty().toString(), obj.lastNameProperty().toString());
+	EmployeeBean employeeBean = new EmployeeBean(obj.firstNameProperty().toString(), obj.lastNameProperty().toString());
 //	StudentBean studentBean = new StudentBean();
-	studentBean.firstName = obj.firstNameProperty().getValue();
-	studentBean.lastName = obj.lastNameProperty().getValue();
-	studentBean.grades = obj.gradesProperty().getValue();
+	employeeBean.firstName = obj.firstNameProperty().getValue();
+	employeeBean.lastName = obj.lastNameProperty().getValue();
+	employeeBean.position = obj.positionProperty().getValue();
+	System.out.println(employeeBean.lastName);
 //	studentBean.grades = obj.gradesProperty().getValue();
 //	StudentBean.nameProperty().set(obj.lastName + ", " + obj.firstName);
 	System.out.println(obj.lastNameProperty().getValue());
-	System.out.println(obj.gradesProperty().getValue());
-	return studentBean;
+	System.out.println(obj.positionProperty().getValue());
+	return employeeBean;
 	}
 
 

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.hccs.samples.sample.gps.core.ComponentCombiner;
 import com.hccs.samples.sample.gps.core.FormBase;
 import com.hccs.samples.sample.gps.core.annotations.Form;
+import com.hccs.samples.sample.gps.models.beans.EmployeeBean;
 import com.hccs.samples.sample.gps.models.beans.StudentBean;
 import com.hccs.samples.sample.gps.node.employee.EmployeeFormConfig;
 import com.hccs.samples.sample.gps.node.employee.details.EmployeeDetailsController;
@@ -53,9 +54,10 @@ public class _EmployeeForm extends FormBase implements EmployeeForm {
 		window.setupActions();
 		System.out.println("_NodeForm, setupActions method, start");
 		
-		window.addOnSetAction(new Consumer<List<StudentBean>>() {
+		window.addOnSetAction(new Consumer<List<EmployeeBean>>() {
 			@Override
-			public void accept(List<StudentBean> studList) {
+			public void accept(List<EmployeeBean> studList) {
+				System.out.println(studList);
 				list.setData(studList);
 			}
 		});

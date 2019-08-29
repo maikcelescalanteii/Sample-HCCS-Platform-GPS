@@ -1,4 +1,7 @@
-com\hccs\samples\sample\gps\models\ModelsModuleInit.class
 com\hccs\samples\sample\gps\models\beans\GradesBean.class
+com\hccs\samples\sample\gps\models\beans\EmployeePositionBean.class
+com\hccs\samples\sample\gps\models\beans\EmployeeBean.class
+com\hccs\samples\sample\gps\models\ModelsModuleInit.class
 com\hccs\samples\sample\gps\models\StudentsModel.class
 com\hccs\samples\sample\gps\models\beans\StudentBean.class
+com\hccs\samples\sample\gps\models\EmployeeModel.class

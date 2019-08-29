@@ -20,6 +20,7 @@ public class ModelsModuleInit implements ModuleInit {
 		// TODO Auto-generated method stub
 		System.out.println("ModelsModuleInit class, init method");
 		StudentsModel.initialize();
+		EmployeeModel.initialize();
 
 	}
 

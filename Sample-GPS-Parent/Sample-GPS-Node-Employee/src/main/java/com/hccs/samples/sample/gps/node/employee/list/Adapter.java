@@ -1,8 +1,6 @@
 package com.hccs.samples.sample.gps.node.employee.list;
 
-import java.util.List;
-
-import com.hccs.samples.sample.gps.models.beans.GradesBean;
+import com.hccs.samples.sample.gps.models.beans.EmployeePositionBean;
 
 import javafx.beans.property.ListProperty;
 import javafx.beans.property.SimpleListProperty;
@@ -15,13 +13,13 @@ public class Adapter {
 	
 //	List<GradesBean> grades;
 	
-	private final ListProperty <GradesBean> grades;
+	private final ListProperty <EmployeePositionBean> position;
 	
 	
 	public Adapter() {
 		lastName = new SimpleStringProperty();
 		firstName = new SimpleStringProperty();
-		grades = new SimpleListProperty<GradesBean>();
+		position = new SimpleListProperty<EmployeePositionBean>();
 	}
 
 	public StringProperty firstNameProperty() {
@@ -32,8 +30,8 @@ public class Adapter {
 		return lastName;
 	}
 	
-	public ListProperty <GradesBean> gradesProperty() {
-		return grades;
+	public ListProperty <EmployeePositionBean> positionProperty() {
+		return position;
 	}
 	
 	@Override

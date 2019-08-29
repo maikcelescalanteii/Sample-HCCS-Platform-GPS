@@ -6,13 +6,15 @@ import java.util.function.Consumer;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.hccs.samples.sample.gps.core.annotations.SupervisingController;
+import com.hccs.samples.sample.gps.models.EmployeeModel;
 import com.hccs.samples.sample.gps.models.StudentsModel;
+import com.hccs.samples.sample.gps.models.beans.EmployeeBean;
 import com.hccs.samples.sample.gps.models.beans.StudentBean;
 
 @SupervisingController
 public class _EmployeeWindowController implements EmployeeWindowController {
 
-	Consumer<List<StudentBean>> studentConsumer;
+	Consumer<List<EmployeeBean>> studentConsumer;
 	
 	@Autowired
 	private EmployeeWindowPresenter presenter;
@@ -28,8 +30,9 @@ public class _EmployeeWindowController implements EmployeeWindowController {
 		presenter.addOnFetchAllAction(new Runnable() {
 			@Override
 			public void run() {
-				studentConsumer.accept(StudentsModel.getStudents());
-//			System.out.println("Hey");
+				System.out.println("Hey employee");
+				studentConsumer.accept(EmployeeModel.getEmployees());
+			
 			}
 		});
 	}
@@ -45,10 +48,10 @@ public class _EmployeeWindowController implements EmployeeWindowController {
 	}
 
 	@Override
-	public void addOnSetAction(Consumer<List<StudentBean>> studentBean) {
+	public void addOnSetAction(Consumer<List<EmployeeBean>> employeeBean) {
 		// TODO Auto-generated method stub
 		System.out.println("_WindowController, addOnSetAction");
-		studentConsumer = studentBean;
+		studentConsumer = employeeBean;
 	}
 
 	@Override

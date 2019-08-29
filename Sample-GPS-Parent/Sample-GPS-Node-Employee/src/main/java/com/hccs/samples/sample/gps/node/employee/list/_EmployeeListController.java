@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.hccs.samples.sample.gps.core.annotations.SupervisingController;
+import com.hccs.samples.sample.gps.models.beans.EmployeeBean;
 import com.hccs.samples.sample.gps.models.beans.StudentBean;
 
 @SupervisingController
@@ -27,7 +28,7 @@ public class _EmployeeListController implements EmployeeListController {
 	public void setupActions() {
 	}
 
-	public void setData(List<StudentBean> data) {
+	public void setData(List<EmployeeBean> data) {
 		System.out.println("_ListController, setData method");
 		presenter.setData(data.stream().map(transformer::transform).collect(Collectors.toList()));
 	}

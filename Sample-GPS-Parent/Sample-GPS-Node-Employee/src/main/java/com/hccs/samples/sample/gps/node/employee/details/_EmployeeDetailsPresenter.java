@@ -6,6 +6,7 @@ import java.util.function.Consumer;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.hccs.samples.sample.gps.core.annotations.PresentationModel;
+import com.hccs.samples.sample.gps.models.beans.EmployeeBean;
 import com.hccs.samples.sample.gps.models.beans.StudentBean;
 
 @PresentationModel
@@ -30,9 +31,9 @@ public class _EmployeeDetailsPresenter implements EmployeeDetailsPresenter {
 	}
 
 	@Override
-	public void setOnSelectItem(StudentBean studentBean) {
+	public void setOnSelectItem(EmployeeBean employeeBean) {
 		// TODO Auto-generated method stub
-		glass.setOnSelectItem(studentBean);
+		glass.setOnSelectItem(employeeBean);
 		
 	}
 	

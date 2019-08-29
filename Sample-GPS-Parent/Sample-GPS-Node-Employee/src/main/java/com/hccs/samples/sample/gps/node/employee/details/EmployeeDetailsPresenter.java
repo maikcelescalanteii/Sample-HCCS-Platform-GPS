@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 import com.hccs.samples.sample.gps.core.interfaces.PresentationModel;
+import com.hccs.samples.sample.gps.models.beans.EmployeeBean;
 import com.hccs.samples.sample.gps.models.beans.StudentBean;
 
 public interface EmployeeDetailsPresenter extends PresentationModel {
@@ -12,7 +13,7 @@ public interface EmployeeDetailsPresenter extends PresentationModel {
 
 	public void setOnApply(Consumer<List<String>> consumer);
 	
-	public void setOnSelectItem(StudentBean studentBean);
+	public void setOnSelectItem(EmployeeBean employeeBean);
 	
 	public void setOnModifyList (Runnable runnable);
 	

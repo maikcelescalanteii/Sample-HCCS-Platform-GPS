@@ -6,6 +6,8 @@ import java.util.function.Consumer;
 
 import com.hccs.samples.sample.gps.core.annotations.Glass;
 import com.hccs.samples.sample.gps.core.interfaces.GlassGrabber;
+import com.hccs.samples.sample.gps.models.beans.EmployeeBean;
+import com.hccs.samples.sample.gps.models.beans.EmployeePositionBean;
 import com.hccs.samples.sample.gps.models.beans.GradesBean;
 import com.hccs.samples.sample.gps.models.beans.StudentBean;
 
@@ -34,13 +36,13 @@ public class _EmployeeDetailsGlass extends BorderPane implements EmployeeDetails
 	@FXML
 	private TextField txtLastName;
 	@FXML
-	private TableView<GradesBean> tblDetails;
+	private TableView<EmployeePositionBean> tblDetails;
 	@FXML
-	private TableColumn<GradesBean, String> tbcAddress;
+	private TableColumn<EmployeePositionBean, String> tbcAddress;
 	@FXML
-	private TableColumn<GradesBean, String> tbcGender;
+	private TableColumn<EmployeePositionBean, String> tbcGender;
 	@FXML
-	private TableColumn<GradesBean, String> tbcPosition;
+	private TableColumn<EmployeePositionBean, String> tbcPosition;
 	
 	private Runnable onModifyList;
 //	private Runnable onClearFilter;
@@ -87,31 +89,31 @@ public class _EmployeeDetailsGlass extends BorderPane implements EmployeeDetails
 	}
 
 	@Override
-	public void setOnSelectItem(StudentBean studentBean) {
+	public void setOnSelectItem(EmployeeBean employeeBean) {
 		System.out.println("_FilterGlass, setChange method");
-		txtFirstName.setText(studentBean.firstName.toString());
-		txtLastName.setText(studentBean.lastName.toString());
+		txtFirstName.setText(employeeBean.firstName.toString());
+		txtLastName.setText(employeeBean.lastName.toString());
 		
-		tblDetails.setItems(FXCollections.observableArrayList(studentBean.grades));
+		tblDetails.setItems(FXCollections.observableArrayList(employeeBean.position));
 		
-		tbcAddress.setCellValueFactory(new Callback<CellDataFeatures<GradesBean, String>, ObservableValue<String>>() {
+		tbcAddress.setCellValueFactory(new Callback<CellDataFeatures<EmployeePositionBean, String>, ObservableValue<String>>() {
 			@Override
-			public ObservableValue<String> call(CellDataFeatures<GradesBean, String> param) {
-				System.out.println(param.getValue().subject);
-				return new SimpleStringProperty(param.getValue().subject);
+			public ObservableValue<String> call(CellDataFeatures<EmployeePositionBean, String> param) {
+				System.out.println(param.getValue().address);
+				return new SimpleStringProperty(param.getValue().address);
 			}
 		});
 		
-		tbcGender.setCellValueFactory(new Callback<CellDataFeatures<GradesBean, String>, ObservableValue<String>>() {
+		tbcGender.setCellValueFactory(new Callback<CellDataFeatures<EmployeePositionBean, String>, ObservableValue<String>>() {
 			@Override
-			public ObservableValue<String> call(CellDataFeatures<GradesBean, String> param) {
-				System.out.println(String.valueOf(param.getValue().grade));
-				return new SimpleStringProperty(String.valueOf(param.getValue().grade));
+			public ObservableValue<String> call(CellDataFeatures<EmployeePositionBean, String> param) {
+				System.out.println(String.valueOf(param.getValue().gender));
+				return new SimpleStringProperty(String.valueOf(param.getValue().gender));
 			}
 		});
-		tbcPosition.setCellValueFactory(new Callback<CellDataFeatures<GradesBean, String>, ObservableValue<String>>() {
+		tbcPosition.setCellValueFactory(new Callback<CellDataFeatures<EmployeePositionBean, String>, ObservableValue<String>>() {
 			@Override
-			public ObservableValue<String> call(CellDataFeatures<GradesBean, String> param) {
+			public ObservableValue<String> call(CellDataFeatures<EmployeePositionBean, String> param) {
 				System.out.println(String.valueOf(param.getValue().getRemarks()));
 				return new SimpleStringProperty(param.getValue().getRemarks());
 			}
