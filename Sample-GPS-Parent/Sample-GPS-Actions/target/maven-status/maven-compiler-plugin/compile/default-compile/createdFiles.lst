@@ -1,0 +1,12 @@
+com\hccs\samples\sample\gps\actions\interfaces\Edit.class
+com\hccs\samples\sample\gps\actions\interfaces\Cancel.class
+com\hccs\samples\sample\gps\actions\handlers\SaveActionHandler.class
+com\hccs\samples\sample\gps\actions\interfaces\FetchAll.class
+com\hccs\samples\sample\gps\actions\processors\ActionLayoutProcessor.class
+com\hccs\samples\sample\gps\actions\interfaces\Save.class
+com\hccs\samples\sample\gps\actions\handlers\FetchAllActionHandler.class
+com\hccs\samples\sample\gps\actions\ActionsModuleInit.class
+com\hccs\samples\sample\gps\actions\handlers\NewActionHandler.class
+com\hccs\samples\sample\gps\actions\interfaces\New.class
+com\hccs\samples\sample\gps\actions\handlers\CancelActionHandler.class
+com\hccs\samples\sample\gps\actions\handlers\EditActionHandler.class

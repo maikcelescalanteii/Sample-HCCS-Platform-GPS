@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1565754359364_1" label="Sample-GPS-Parent" name="Sample-GPS-Parent">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Sample-GPS-Core" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Sample-GPS-Node" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Sample-GPS-Boot" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1565753903579_0" label="Window Working Set" name="Aggregate for window 1565753903578"/>
+</workingSetManager>
