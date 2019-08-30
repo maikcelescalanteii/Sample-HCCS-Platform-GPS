@@ -42,12 +42,6 @@ public class _EmployeeDetailsController implements EmployeeDetailsController {
 		presenter.setOnSelectItem(transformer.transform(adapter));
 		
 	}
-
-	@Override
-	public void setOnModifyList(Runnable runnable) {
-		// TODO Auto-generated method stub
-		presenter.setOnModifyList(runnable);
-	}
 	
 	@Override
 	public void setOnNew() {
@@ -60,6 +54,13 @@ public class _EmployeeDetailsController implements EmployeeDetailsController {
 	public void setOnCancel() {
 		// TODO Auto-generated method stub
 		presenter.setOnCancel();
+		
+	}
+
+	@Override
+	public void setOnEdit() {
+		// TODO Auto-generated method stub
+		presenter.setOnEdit();
 		
 	}
 

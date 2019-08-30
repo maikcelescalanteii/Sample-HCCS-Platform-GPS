@@ -15,9 +15,9 @@ public interface EmployeeDetailsPresenter extends PresentationModel {
 	
 	public void setOnSelectItem(EmployeeBean employeeBean);
 	
-	public void setOnModifyList (Runnable runnable);
-	
 	public void setOnNew ();
+	
+	public void setOnEdit ();
 	
 	public void setOnCancel ();
 	

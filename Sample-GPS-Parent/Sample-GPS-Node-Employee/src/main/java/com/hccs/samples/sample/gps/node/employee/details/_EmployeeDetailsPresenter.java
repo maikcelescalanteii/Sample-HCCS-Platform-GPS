@@ -34,13 +34,6 @@ public class _EmployeeDetailsPresenter implements EmployeeDetailsPresenter {
 	public void setOnSelectItem(EmployeeBean employeeBean) {
 		// TODO Auto-generated method stub
 		glass.setOnSelectItem(employeeBean);
-		
-	}
-	
-	@Override
-	public void setOnModifyList(Runnable runnable) {
-		// TODO Auto-generated method stub
-		glass.setOnModifyList(runnable);
 	}
 
 	@Override
@@ -53,5 +46,11 @@ public class _EmployeeDetailsPresenter implements EmployeeDetailsPresenter {
 	public void setOnCancel() {
 		// TODO Auto-generated method stub
 		glass.setOnCancel();
+	}
+
+	@Override
+	public void setOnEdit() {
+		// TODO Auto-generated method stub
+		
 	}
 }

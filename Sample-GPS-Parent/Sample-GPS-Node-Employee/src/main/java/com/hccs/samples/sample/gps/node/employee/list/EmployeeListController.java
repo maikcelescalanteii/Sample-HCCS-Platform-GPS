@@ -12,5 +12,5 @@ public interface EmployeeListController extends SupervisingController {
 	
 	public void setOnSelectItem(Consumer<Adapter> adapter);
 	
-	public void setOnModifyList();
+	public void setOnInputMode();
 }

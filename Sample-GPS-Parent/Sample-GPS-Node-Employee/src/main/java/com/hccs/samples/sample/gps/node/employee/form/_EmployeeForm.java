@@ -65,6 +65,7 @@ public class _EmployeeForm extends FormBase implements EmployeeForm {
 			@Override
 			public void accept(Adapter selectedStud) {
 				filter.setOnSelectItem(selectedStud);
+				window.addOnSelectedItemAction();
 			}
 		});
 		
@@ -86,13 +87,13 @@ public class _EmployeeForm extends FormBase implements EmployeeForm {
 			
 		});
 		
-		filter.setOnModifyList(new Runnable() {
+		window.addOnEditAction(new Runnable() {
 
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-				list.setOnModifyList();
-				
+				filter.setOnEdit();
+				list.setOnInputMode();
 			}
 			
 		});

@@ -23,6 +23,8 @@ import javafx.scene.Node;
 @Form
 public class _StudentForm extends FormBase implements StudentForm {
 
+	private double serialNo = Math.random();
+	
 	@Autowired
 	private NodeGateway gateway;
 
@@ -50,6 +52,7 @@ public class _StudentForm extends FormBase implements StudentForm {
 //		filter.setOnApply(filters -> list.setData(fetch(filters)));
 //		window.addOnShowAction(() -> System.out.println("This form is shown."));
 		
+		System.out.println("SN: " + serialNo);
 		window.setupActions();
 		System.out.println("_NodeForm, setupActions method, start");
 		

@@ -12,4 +12,8 @@ public interface EmployeeWindowPresenter extends PresentationModel, Showable {
 	public void addOnCancelAction(Runnable runnable);
 	
 	public void addOnNewAction(Runnable runnable);
+	
+	public void addOnEditAction(Runnable runnable);
+	
+	public void addOnSelectedItemAction();
 }

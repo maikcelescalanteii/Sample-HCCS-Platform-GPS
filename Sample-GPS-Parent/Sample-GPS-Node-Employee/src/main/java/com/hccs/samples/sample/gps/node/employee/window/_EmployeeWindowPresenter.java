@@ -45,4 +45,16 @@ public class _EmployeeWindowPresenter implements EmployeeWindowPresenter {
 		
 	}
 
+	@Override
+	public void addOnEditAction(Runnable runnable) {
+		// TODO Auto-generated method stub
+		glass.addOnEditAction(runnable);
+	}
+
+	@Override
+	public void addOnSelectedItemAction() {
+		// TODO Auto-generated method stub
+		glass.addOnSelectedItemAction();
+	}
+
 }

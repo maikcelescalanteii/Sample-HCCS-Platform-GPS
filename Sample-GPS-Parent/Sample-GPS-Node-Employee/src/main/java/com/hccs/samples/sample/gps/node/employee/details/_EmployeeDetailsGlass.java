@@ -8,8 +8,6 @@ import com.hccs.samples.sample.gps.core.annotations.Glass;
 import com.hccs.samples.sample.gps.core.interfaces.GlassGrabber;
 import com.hccs.samples.sample.gps.models.beans.EmployeeBean;
 import com.hccs.samples.sample.gps.models.beans.EmployeePositionBean;
-import com.hccs.samples.sample.gps.models.beans.GradesBean;
-import com.hccs.samples.sample.gps.models.beans.StudentBean;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableValue;
@@ -17,7 +15,6 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.scene.control.TableView;
@@ -121,13 +118,6 @@ public class _EmployeeDetailsGlass extends BorderPane implements EmployeeDetails
 		// TODO Auto-generated method stub	
 	}
 	
-
-	@Override
-	public void setOnModifyList(Runnable runnable) {
-		// TODO Auto-generated method stub
-		onModifyList = runnable;
-	}
-	
 	@Override
 	public void setOnNew() {
 		// TODO Auto-generated method stub
@@ -141,6 +131,12 @@ public class _EmployeeDetailsGlass extends BorderPane implements EmployeeDetails
 		
 	}
 
+	@Override
+	public void setOnEdit() {
+		// TODO Auto-generated method stub
+		inputMode();
+	}
+	
 	@Override
 	public void setOnCancel() {
 		// TODO Auto-generated method stub

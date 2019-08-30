@@ -32,7 +32,8 @@ import javafx.scene.Node;
 //
 //In this case, TopWindow class will be extended, for platform use.
 
-@TopComponent(title = "Employee Details", fxml = "/com/hccs/sample/resources/fxml/EmployeeMainWindow.fxml", image = "/com/hccs/sample/resources/_16x16/studentreportcard.png", location = "container", group = "horizontal", closeOperation = CloseOperation.CLOSE)
+@TopComponent(title = "Employee Details", fxml = "/com/hccs/sample/resources/fxml/EmployeeMainWindow.fxml", image = "/com/hccs/sample/resources/_16x16/studentreportcard.png", location = "container", group = "horizontal", closeOperation = CloseOperation.HIDE)
+//@TopComponent(title = "Employee Details", fxml = "/com/hccs/sample/resources/fxml/EmployeeMainWindow.fxml", image = "/com/hccs/sample/resources/_16x16/studentreportcard.png", location = "container", group = "horizontal", closeable = true)
 public class _EmployeeWindowGlass extends PlatformTopWindow implements EmployeeWindowGlass {
 
 	private final List<Runnable> onShowActions;
@@ -44,6 +45,8 @@ public class _EmployeeWindowGlass extends PlatformTopWindow implements EmployeeW
 	private Runnable onCancelAction;
 	
 	private Runnable onNewAction;
+	
+	private Runnable onEditAction;
 	
 	public _EmployeeWindowGlass() {
 		onShowActions = new ArrayList<>();
@@ -112,7 +115,8 @@ public class _EmployeeWindowGlass extends PlatformTopWindow implements EmployeeW
 
 	private Edit editAction = () -> {
 		isUpdate = true;
-//		inputMode();
+		this.onEditAction.run();
+		inputMode();
 	};
 
 	private FetchAll fetchAllAction = () -> {
@@ -173,6 +177,18 @@ public class _EmployeeWindowGlass extends PlatformTopWindow implements EmployeeW
 		onCancelAction = runnable;
 	}
 	
+	@Override
+	public void addOnEditAction(Runnable runnable) {
+		// TODO Auto-generated method stub
+		onEditAction = runnable;
+	}
+	
+	@Override
+	public void addOnSelectedItemAction() {
+		// TODO Auto-generated method stub
+		addToActionMap(Edit.class, editAction);
+	}
+	
 	private void inputMode() {
 		addToActionMap(Cancel.class, cancelAction);
 		addToActionMap(Save.class, saveAction);
@@ -180,5 +196,4 @@ public class _EmployeeWindowGlass extends PlatformTopWindow implements EmployeeW
 		removeFromActionMap(New.class);
 		removeFromActionMap(Edit.class);
 	}
-	
 }

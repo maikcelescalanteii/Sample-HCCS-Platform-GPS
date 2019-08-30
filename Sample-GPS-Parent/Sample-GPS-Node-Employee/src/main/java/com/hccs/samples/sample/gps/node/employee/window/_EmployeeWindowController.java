@@ -66,4 +66,17 @@ public class _EmployeeWindowController implements EmployeeWindowController {
 		presenter.addOnCancelAction(runnable);
 		
 	}
+
+	@Override
+	public void addOnEditAction(Runnable runnable) {
+		// TODO Auto-generated method stub
+		presenter.addOnEditAction(runnable);
+		
+	}
+
+	@Override
+	public void addOnSelectedItemAction() {
+		// TODO Auto-generated method stub
+		presenter.addOnSelectedItemAction();
+	}
 }

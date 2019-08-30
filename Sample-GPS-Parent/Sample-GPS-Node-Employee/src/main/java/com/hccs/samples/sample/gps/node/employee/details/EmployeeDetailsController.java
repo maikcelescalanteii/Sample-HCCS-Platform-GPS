@@ -12,9 +12,9 @@ public interface EmployeeDetailsController extends SupervisingController {
 	
 	public void setOnSelectItem(Adapter adapter);
 	
-	public void setOnModifyList (Runnable runnable);
-	
 	public void setOnNew ();
+	
+	public void setOnEdit ();
 	
 	public void setOnCancel ();
 }

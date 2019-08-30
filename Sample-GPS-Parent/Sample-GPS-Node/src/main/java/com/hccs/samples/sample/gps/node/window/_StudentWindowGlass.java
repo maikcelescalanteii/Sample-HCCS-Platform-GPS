@@ -32,7 +32,8 @@ import javafx.scene.Node;
 //
 //In this case, TopWindow class will be extended, for platform use.
 
-@TopComponent(title = "Student Report Card", fxml = "/com/hccs/sample/resources/fxml/StudentMainWindow.fxml", image = "/com/hccs/sample/resources/_16x16/studentreportcard.png", location = "container", group = "horizontal", closeOperation = CloseOperation.CLOSE)
+@TopComponent(title = "Student Report Card", fxml = "/com/hccs/sample/resources/fxml/StudentMainWindow.fxml", image = "/com/hccs/sample/resources/_16x16/studentreportcard.png", location = "container", group = "horizontal", closeOperation = CloseOperation.HIDE)
+//@TopComponent(title = "Student Report Card", fxml = "/com/hccs/sample/resources/fxml/StudentMainWindow.fxml", image = "/com/hccs/sample/resources/_16x16/studentreportcard.png", location = "container", group = "horizontal", closeable = true)
 public class _StudentWindowGlass extends PlatformTopWindow implements StudentWindowGlass {
 
 	private final List<Runnable> onShowActions;

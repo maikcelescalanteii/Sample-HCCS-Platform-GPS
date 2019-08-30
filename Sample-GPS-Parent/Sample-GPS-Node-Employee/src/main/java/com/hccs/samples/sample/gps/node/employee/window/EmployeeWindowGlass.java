@@ -18,4 +18,8 @@ public interface EmployeeWindowGlass extends Glass, Showable {
 	public void addOnCancelAction(Runnable runnable);
 	
 	public void addOnNewAction(Runnable runnable);
+	
+	public void addOnEditAction(Runnable runnable);
+	
+	public void addOnSelectedItemAction();
 }

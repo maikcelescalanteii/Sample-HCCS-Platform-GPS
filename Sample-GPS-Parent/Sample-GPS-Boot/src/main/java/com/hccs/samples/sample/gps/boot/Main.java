@@ -14,6 +14,7 @@ public class Main {
 //		Main main = new Main();
 //		main.showNodeForm();
 
+//		Context.initialize();
 		Application.launch(PlatformApplication.class);
 	}
 

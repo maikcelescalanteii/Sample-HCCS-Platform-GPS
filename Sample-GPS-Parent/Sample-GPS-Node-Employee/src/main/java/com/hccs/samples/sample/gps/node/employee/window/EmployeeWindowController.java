@@ -17,4 +17,8 @@ public interface EmployeeWindowController extends SupervisingController, Showabl
 	
 	public void addOnNewAction(Runnable runnable);
 	
+	public void addOnEditAction(Runnable runnable);
+	
+	public void addOnSelectedItemAction();
+	
 }

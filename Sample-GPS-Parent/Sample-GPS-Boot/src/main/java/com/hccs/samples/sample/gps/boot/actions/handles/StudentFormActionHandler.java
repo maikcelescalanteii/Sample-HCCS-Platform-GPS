@@ -17,7 +17,7 @@ public class StudentFormActionHandler extends ActionHandler {
 	@Override
 	public void handle(ActionEvent event) {
 		System.out.println("Loading Students Report Card Window....");
-		Context.initialize();
+//		Context.initialize();
 		Context.lookup("StudentModuleConfig", StudentModuleConfig.class);
 		StudentForm form = Context.getBean(StudentForm.class);
 		form.show();

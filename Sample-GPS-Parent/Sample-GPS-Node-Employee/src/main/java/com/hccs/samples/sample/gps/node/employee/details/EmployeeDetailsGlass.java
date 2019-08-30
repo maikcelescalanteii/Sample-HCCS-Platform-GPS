@@ -16,9 +16,9 @@ public interface EmployeeDetailsGlass extends Glass, PartialGlass {
 	
 	public void setOnSelectItem(EmployeeBean employeeBean);
 	
-	public void setOnModifyList (Runnable runnable);
-	
 	public void setOnNew ();
+	
+	public void setOnEdit ();
 	
 	public void setOnCancel ();
 

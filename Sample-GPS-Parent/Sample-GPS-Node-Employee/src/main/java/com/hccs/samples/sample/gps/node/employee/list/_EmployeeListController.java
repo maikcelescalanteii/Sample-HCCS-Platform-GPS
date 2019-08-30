@@ -40,7 +40,7 @@ public class _EmployeeListController implements EmployeeListController {
 	}
 
 	@Override
-	public void setOnModifyList() {
+	public void setOnInputMode() {
 		// TODO Auto-generated method stub
 		presenter.setOnModifyList();
 		
