@@ -2,7 +2,6 @@ D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\window\_EmployeeWindowController.java
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\list\ObjectToAdapterTransformer.java
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\processors\MainStageProcessor.java
-D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\nodes\employee\proxies\PartialGlass.java
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\EmployeeModuleInit.java
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\list\EmployeeListPresenter.java
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\gateway\NodeGateway.java
@@ -23,6 +22,7 @@ D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\details\_EmployeeDetailsPresenter.java
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\list\_EmployeeListController.java
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\details\EmployeeDetailsPresenter.java
+D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\proxies\PartialGlass.java
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\details\_EmployeeDetailsController.java
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\EmployeeFormConfig.java
 D:\Projects\Sample-HCCS-Platform-GPS\Sample-GPS-Parent\Sample-GPS-Node-Employee\src\main\java\com\hccs\samples\sample\gps\node\employee\form\_EmployeeForm.java

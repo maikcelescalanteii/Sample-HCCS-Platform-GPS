@@ -1,4 +1,4 @@
-package com.hccs.samples.sample.gps.nodes.employee.proxies;
+package com.hccs.samples.sample.gps.node.admin.settings.proxies;
 
 import com.hccs.samples.sample.gps.core.interfaces.GlassGrabber;
 

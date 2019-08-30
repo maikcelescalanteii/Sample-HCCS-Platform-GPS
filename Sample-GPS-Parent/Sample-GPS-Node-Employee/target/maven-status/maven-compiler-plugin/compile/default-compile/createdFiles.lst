@@ -31,7 +31,7 @@ com\hccs\samples\sample\gps\node\employee\details\_EmployeeDetailsController.cla
 com\hccs\samples\sample\gps\node\employee\form\_EmployeeForm$3.class
 com\hccs\samples\sample\gps\node\employee\form\_EmployeeForm$ListAttacher.class
 com\hccs\samples\sample\gps\node\employee\details\_EmployeeDetailsGlass$3.class
-com\hccs\samples\sample\gps\nodes\employee\proxies\PartialGlass.class
+com\hccs\samples\sample\gps\node\employee\proxies\PartialGlass.class
 com\hccs\samples\sample\gps\node\employee\processors\StatusBarInitProcessor.class
 com\hccs\samples\sample\gps\node\employee\EmployeeFormConfig.class
 com\hccs\samples\sample\gps\node\employee\details\_EmployeeDetailsGlass$1.class

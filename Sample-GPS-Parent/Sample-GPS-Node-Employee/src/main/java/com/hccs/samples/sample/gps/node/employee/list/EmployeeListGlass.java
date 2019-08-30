@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 import com.hccs.samples.sample.gps.core.interfaces.Glass;
-import com.hccs.samples.sample.gps.nodes.employee.proxies.PartialGlass;
+import com.hccs.samples.sample.gps.node.employee.proxies.PartialGlass;
 
 public interface EmployeeListGlass extends Glass, PartialGlass {
 

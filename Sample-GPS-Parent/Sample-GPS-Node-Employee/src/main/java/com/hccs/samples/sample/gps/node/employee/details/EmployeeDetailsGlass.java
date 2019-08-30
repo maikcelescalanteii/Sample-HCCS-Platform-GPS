@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 import com.hccs.samples.sample.gps.core.interfaces.Glass;
 import com.hccs.samples.sample.gps.models.beans.EmployeeBean;
 import com.hccs.samples.sample.gps.models.beans.StudentBean;
-import com.hccs.samples.sample.gps.nodes.employee.proxies.PartialGlass;
+import com.hccs.samples.sample.gps.node.employee.proxies.PartialGlass;
 
 public interface EmployeeDetailsGlass extends Glass, PartialGlass {
 

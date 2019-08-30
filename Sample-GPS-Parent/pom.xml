@@ -60,5 +60,6 @@
 		<module>Sample-GPS-Models</module>
 		<module>Sample-GPS-Actions</module>
 		<module>Sample-GPS-Node-Employee</module>
+		<module>Sample-GPS-Node-Admin</module>
 	</modules>
 </project>
