@@ -14,7 +14,7 @@ import com.hccs.samples.sample.gps.node.admin.settings.window._AdminSettingsWind
 public class AdminSettingsFormConfig {
 
 	@GlassBean
-	public AdminSettingsWindowGlass adminWindowGlass() {
+	public AdminSettingsWindowGlass adminSettingsWindowGlass() {
 		// If you're using platform, do this with your top window glass, otherwise, just
 		// annotate with @glass the glass implementation and delete this method.
 		//

@@ -10,7 +10,7 @@ import com.hccs.samples.sample.gps.models.beans.EmployeeBean;
 import com.hccs.samples.sample.gps.models.beans.StudentBean;
 
 @PresentationModel
-public class _AdminDetailsPresenter implements AdminSettingsDetailsPresenter {
+public class _AdminSettingsDetailsPresenter implements AdminSettingsDetailsPresenter {
 
 	@Autowired
 	private AdminSettingsDetailsGlass glass;

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 import com.hccs.platform.HCCSPlatform;
+import com.hccs.platform.annotations.OnShow;
 import com.hccs.platform.annotations.TopComponent;
 import com.hccs.platform.enums.CloseOperation;
 import com.hccs.platform.extendables.PlatformTopWindow;
@@ -32,8 +33,8 @@ import javafx.scene.Node;
 //
 //In this case, TopWindow class will be extended, for platform use.
 
-@TopComponent(title = "Employee Details", fxml = "/com/hccs/sample/resources/fxml/EmployeeMainWindow.fxml", image = "/com/hccs/sample/resources/_16x16/studentreportcard.png", location = "container", group = "horizontal", closeOperation = CloseOperation.HIDE)
 //@TopComponent(title = "Employee Details", fxml = "/com/hccs/sample/resources/fxml/EmployeeMainWindow.fxml", image = "/com/hccs/sample/resources/_16x16/studentreportcard.png", location = "container", group = "horizontal", closeable = true)
+@TopComponent(title = "Employee Details", fxml = "/com/hccs/sample/resources/fxml/EmployeeMainWindow.fxml", image = "/com/hccs/sample/resources/_16x16/studentreportcard.png", location = "container", group = "horizontal", closeOperation = CloseOperation.HIDE)
 public class _EmployeeWindowGlass extends PlatformTopWindow implements EmployeeWindowGlass {
 
 	private final List<Runnable> onShowActions;
@@ -66,8 +67,8 @@ public class _EmployeeWindowGlass extends PlatformTopWindow implements EmployeeW
 		 super.show();
 	}
 
-	// @OnShow
 	// This is a platform annotation
+	 @OnShow
 	public void onShow() {
 		this.onShowActions.forEach(new Consumer<Runnable>() {
 			@Override

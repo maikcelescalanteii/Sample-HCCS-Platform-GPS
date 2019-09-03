@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 import com.hccs.platform.HCCSPlatform;
+import com.hccs.platform.annotations.OnShow;
 import com.hccs.platform.annotations.TopComponent;
 import com.hccs.platform.enums.CloseOperation;
 import com.hccs.platform.extendables.PlatformTopWindow;
@@ -66,8 +67,8 @@ public class _StudentWindowGlass extends PlatformTopWindow implements StudentWin
 		 super.show();
 	}
 
-	// @OnShow
 	// This is a platform annotation
+	 @OnShow
 	public void onShow() {
 		this.onShowActions.forEach(new Consumer<Runnable>() {
 			@Override

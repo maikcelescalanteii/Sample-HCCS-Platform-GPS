@@ -6,15 +6,13 @@ import com.hccs.platform.annotations.ActionPaths;
 import com.hccs.platform.enums.ActionLocation;
 import com.hccs.platform.extendables.ActionHandler;
 import com.hccs.samples.sample.gps.boot.Context;
-import com.hccs.samples.sample.gps.node.StudentModuleConfig;
+import com.hccs.samples.sample.gps.node.admin.profile.AdminProfileModuleConfig;
+import com.hccs.samples.sample.gps.node.admin.profile.form.AdminProfileForm;
 import com.hccs.samples.sample.gps.node.admin.settings.AdminSettingsModuleConfig;
 import com.hccs.samples.sample.gps.node.admin.settings.form.AdminSettingsForm;
-import com.hccs.samples.sample.gps.node.employee.EmployeeModuleConfig;
-import com.hccs.samples.sample.gps.node.employee.form.EmployeeForm;
-import com.hccs.samples.sample.gps.node.form.StudentForm;
 
 import javafx.event.ActionEvent;
-@Action(name = "adminsettings", toolbarIcon = "/com/hccs/sample/resources/_16x16/studentreportcard.png", text = "Admin Settings")
+@Action(name = "admin", toolbarIcon = "/com/hccs/sample/resources/_16x16/studentreportcard.png", text = "Admin")
 @ActionPaths({ @ActionPath(path = "Scenes", position = 2, location = ActionLocation.TOOLBAR) })
 
 public class AdminFormActionHandler extends ActionHandler {
@@ -26,8 +24,8 @@ public class AdminFormActionHandler extends ActionHandler {
 		AdminSettingsForm adminSettings = Context.getBean(AdminSettingsForm.class);
 		adminSettings.show();
 		
-//		Context.lookup("EmployeeModuleConfig", EmployeeModuleConfig.class);
-//		EmployeeForm employee = Context.getBean(EmployeeForm.class);
-//		employee.show();
+		Context.lookup("AdminProfileModuleConfig", AdminProfileModuleConfig.class);
+		AdminProfileForm adminProfile = Context.getBean(AdminProfileForm.class);
+		adminProfile.show();
 	}
 }
