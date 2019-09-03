@@ -8,6 +8,10 @@ import com.hccs.platform.components.status.TextInfoElement;
 import com.hccs.platform.enums.ProcessorState;
 import com.hccs.platform.extendables.BasicProcessor;
 import com.hccs.samples.sample.gps.boot.Context;
+import com.hccs.samples.sample.gps.node.admin.profile.AdminProfileModuleConfig;
+import com.hccs.samples.sample.gps.node.admin.profile.form.AdminProfileForm;
+import com.hccs.samples.sample.gps.node.dashboard.DashboardModuleConfig;
+import com.hccs.samples.sample.gps.node.dashboard.form.DashboardForm;
 
 public class ContextInitProcessor extends BasicProcessor {
 	@Override
@@ -18,6 +22,6 @@ public class ContextInitProcessor extends BasicProcessor {
 
 	@Override
 	public int getPriority() {
-		return 2;
+		return 0;
 	}
 }
