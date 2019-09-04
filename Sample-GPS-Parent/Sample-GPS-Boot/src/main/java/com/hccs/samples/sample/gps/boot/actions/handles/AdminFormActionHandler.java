@@ -27,5 +27,8 @@ public class AdminFormActionHandler extends ActionHandler {
 		Context.lookup("AdminProfileModuleConfig", AdminProfileModuleConfig.class);
 		AdminProfileForm adminProfile = Context.getBean(AdminProfileForm.class);
 		adminProfile.show();
+		
+		
+		
 	}
 }
